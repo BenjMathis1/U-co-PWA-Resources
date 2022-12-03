@@ -3,9 +3,10 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Index - Network 1</title>
+	<title>Network 1</title>
 	<link rel="manifest" href="manifest.json">
 	<link rel="icon" href="assets/network-1-pre-icon.png">
+	<script type="module" src="https://unpkg.com/@fluentui/web-components"></script>
 </head>
 <style>
 	.center {
@@ -16,8 +17,17 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     }
+	.progress-ring {
+    margin: 0;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    }
 </style>
 <body>
-	<img src="assets/network-1-icon.png" class="center" width="24">
+	<img src="assets/network-1-icon.png" class="center" width="75">
+	<fluent-progress-ring class="progress-ring"></fluent-progress-ring>
 </body>
 </html>
